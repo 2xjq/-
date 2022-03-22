@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include<string.h>
+void main()
+{
+char  a[100];
+char b[10];
+gets(a);
+gets(b);
+int x=strlen( a);
+int y=strlen(b);
+int z=O;
+for(int i=0;i<=x-y;i++)
+{
+char t[y+1];
+t[y]='\0';
+for(int j=0;j<y;j++)
+t[j]=a[i+j];
+if(strcmp(t,b)==0)
+z++;
+}
+printf("\n%d\n",z);
+}
